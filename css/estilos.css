@@ -1,0 +1,65 @@
+:root {
+  --border-color: #555555;
+}
+
+html{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  background-color: #000002;
+  color: #f0f0f0;
+}
+
+body{
+  padding: 1.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  padding-top: 2.5rem;
+}
+
+header h1.titulo {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+header i.icono-añadir-pais{
+  font-size: 1.5rem;
+  font-weight: regular;
+  padding-right: 1rem;
+}
+
+main{
+
+}
+
+main article.info-pais{
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1rem 0;
+
+  border-bottom: 1px solid var(--border-color);
+}
+
+main article .primer-bloque {
+  flex-grow: 1;
+}
+
+main article .diferencia-horaria{
+  font-size: 1.5rem;
+  color: var(--border-color);
+}
+
+main article h1.hora {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+main article h2.ciudad {
+  font-size: 2.3rem;
+}
