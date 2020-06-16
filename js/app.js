@@ -26,12 +26,13 @@ class Ciudad {
     this._difHoras = difHoras
   }
 
-  escribirHoraEnDOM() {
-    const hora = this.horaMadrid.getHours()
-    const minutos = this.horaMadrid.getMinutes()
+  escribirHoraEnDOM = () => {
+    const hora = new Date().getHours() + this._difHoras
+    const minutos = new Date().getMinutes()
 
-    this.htmlHoraLocal.textContent = `${hora + this._difHoras}:${minutos}`
+    this.htmlHoraLocal.textContent = `${hora < 10 ? `0${hora}` : hora}:${minutos < 10 ? `0${minutos}` : minutos}`
   }
+
 
   escribirNombreEnDOM(nombre, difHoras) {
     this.htmlNombre.textContent = this._nombre
@@ -83,6 +84,6 @@ for (ciudad of ciudades) {
   ciudad.escribirNombreEnDOM()
   ciudad.escribirHoraEnDOM()
   ciudad.escribirDirerenciaHorariaEnDOM()
+  setInterval(ciudad.escribirHoraEnDOM, 1000)
 }
 
-//setInterval(ciudad.escribirHoraEnDOM, 6000)
