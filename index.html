@@ -28,14 +28,6 @@
     <meta name="twitter:description" content="" />
     <meta name="twitter:image" content="http://" />
 
-    <!-- FontAwesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous"
-    />
-
     <!-- Nuestro CSS Compilado a través de SASS ó sin compilar solo CSS básico -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/estilos.css" />
@@ -44,12 +36,15 @@
 
   <body>
     <header>
-      <h1 class="titulo">Reloj Mundial</h1>
-      <i class="fas fa-plus icono-añadir-pais"></i>
+      <div>
+        <p id="agregar-ciudad" class="icono-añadir-ciudad">+</p>
+      </div>
+      <div>
+        <h1 class="titulo">Reloj Mundial</h1>
+      </div>
     </header>
-
     <main>
-      <article class="info-pais">
+      <article class="info-ciudad">
         <section class="primer-bloque">
           <h3 class="diferencia-horaria">Hoy, +0H</h3>
           <h2 class="ciudad">Madrid</h2>
@@ -57,7 +52,7 @@
         <h1 class="hora">22:00</h1>
       </article>
 
-      <article class="info-pais">
+      <article class="info-ciudad">
         <section class="primer-bloque">
           <h3 class="diferencia-horaria">Hoy, +0H</h3>
           <h2 class="ciudad">Londres</h2>
@@ -65,7 +60,7 @@
         <h1 class="hora">22:00</h1>
       </article>
 
-      <article class="info-pais">
+      <article class="info-ciudad">
         <section class="primer-bloque">
           <h3 class="diferencia-horaria">Hoy, +0H</h3>
           <h2 class="ciudad">Los Ángeles</h2>
@@ -73,7 +68,7 @@
         <h1 class="hora">22:00</h1>
       </article>
 
-      <article class="info-pais">
+      <article class="info-ciudad">
         <section class="primer-bloque">
           <h3 class="diferencia-horaria">Hoy, +0H</h3>
           <h2 class="ciudad">Nueva York</h2>
@@ -81,17 +76,14 @@
         <h1 class="hora">22:00</h1>
       </article>
 
-      <article class="info-pais">
+      <article class="info-ciudad">
         <section class="primer-bloque">
           <h3 class="diferencia-horaria">Hoy, +0H</h3>
           <h2 class="ciudad">Sídney</h2>
         </section>
         <h1 class="hora">22:00</h1>
       </article>
-
     </main>
-
-    <footer></footer>
     <script src="js/app.js"></script>
   </body>
 </html>

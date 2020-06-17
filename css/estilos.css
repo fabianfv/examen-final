@@ -1,65 +1,69 @@
 :root {
   --border-color: #555555;
-}
 
-html{
-  font-family: 'Roboto', sans-serif;
+  --galaxy-s9-width: 360px;
+  --iphone-6-7-8-height: 667px;
+
+  --kindle-Fire-HDX-width: 800px;
+  --kindle-Fire-HDX-height: 1280px;
+
+  font-family: "Roboto", sans;
   font-weight: bold;
+  font-size: 16px;
+
   background-color: #000002;
   color: #f0f0f0;
 }
 
-body{
-  padding: 1.5rem;
+body {
+  max-width: var(--kindle-Fire-HDX-width);
+  max-height: var(--kindle-Fire-HDX-height);
+  min-width: var(--galaxy-s9-width);
+  min-height: var(--iphone-6-7-8-height);
+  padding: 0 7vw;
+  margin: 0 auto;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
   border-bottom: 1px solid var(--border-color);
-  padding-top: 2.5rem;
+  padding-bottom: calc(0.5rem + 1vh);
 }
 
 header h1.titulo {
-  font-size: 3rem;
+  font-size: calc(1rem + 3vw);
   font-weight: bold;
 }
 
-header i.icono-añadir-pais{
-  font-size: 1.5rem;
-  font-weight: regular;
-  padding-right: 1rem;
+header .icono-añadir-ciudad {
+  font-size: calc(1rem + 6vw);
+  font-weight: 100;
+  color: #eda320;
+  text-align: right;
+  padding-top: calc(1rem + 1vh);
 }
 
-main{
-
-}
-
-main article.info-pais{
+main article.info-ciudad {
   display: flex;
   justify-content: space-between;
 
-  padding: 1rem 0;
-
+  padding: 2vh 0;
   border-bottom: 1px solid var(--border-color);
 }
 
-main article .primer-bloque {
-  flex-grow: 1;
+main article section.primer-bloque {
+  align-self: center;
 }
 
-main article .diferencia-horaria{
-  font-size: 1.5rem;
+main article h3.diferencia-horaria {
+  font-size: calc(0.7rem + 1.3vw);
   color: var(--border-color);
 }
 
 main article h1.hora {
-  flex-grow: 1;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  font-size: calc(1rem + 5vw);
+  align-self: center;
 }
 
 main article h2.ciudad {
-  font-size: 2.3rem;
+  font-size: calc(1rem + 2vw);
 }
