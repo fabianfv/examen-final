@@ -1,6 +1,6 @@
 # Examen Final
 
-[github page](https://fabianfv.github.io/examen-plantilla/)
+[github page](https://fabianfv.github.io/examen-final/)
 
 Ejercicios prácticos del examen final del curso de Javascript, ft. Toni Ferrà.
 
